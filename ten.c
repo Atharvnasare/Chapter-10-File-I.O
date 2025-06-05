@@ -45,17 +45,30 @@
 
 /*Writing from the file*/
 
+// int main(){
+//     FILE*fptr;
+//     fptr = fopen("Text.txt" , "r");
+
+//     printf ("%c \n , ")
+
+//     fclose(fptr);
+//     return 0;
+
+// }
+
 int main(){
-    FILE*fptr;
-    fptr = fopen("Text.txt" , "w");
+    FILE * fptr;
+    fptr  = fopen ("Text.txt" , "r");
+    char ch;
+    ch = fgetc(fptr);
 
-    fprintf(fptr , "%c" , 'M');
-    fprintf(fptr , "%c" , 'A');
-    fprintf(fptr , "%c" , 'N');
-    fprintf(fptr , "%c" , 'G');
-    fprintf(fptr , "%c" , 'O');
-
+    while(ch != EOF){
+            printf("%c" , ch);
+            ch = fgetc(fptr);
+    }
+    printf("\n");
     fclose(fptr);
+    
     return 0;
 
 }
