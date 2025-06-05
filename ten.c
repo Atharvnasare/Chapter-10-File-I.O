@@ -103,29 +103,69 @@
 
     /*MAKE A PROGRAM TO INPUT information form a user rneee e*/
 
+// int main(){
+//     FILE *fptr;
+//     fptr = fopen("Student.txt" , "w");
+
+//     char name[100];
+//     int age ;
+//     float cgpa ;
+
+//     printf("Enter name :");
+//     scanf("%s", name);
+
+//     printf("Enter age :");
+//     scanf("%d", &age);
+
+//     printf("Enter cgpa :");
+//     scanf("%f", &cgpa);
+
+// fprintf(fptr , "Student name : %s\n" , name);
+// fprintf(fptr , "Student age : %d\n" , age);
+// fprintf(fptr , "Student cgpa : %f\t" , cgpa);
+
+// fclose(fptr);
+// return 0;
+// }
+
+/*Write  a program to write all the odd number from 1 to n in a file*/
+
+// int main(){
+//     FILE *fptr ;
+//     fptr = fopen("Odd.txt" , "w");
+
+//     int n;
+//     printf("Enter n :");
+//     scanf("%d" , &n);
+
+//     for (int i=1 ; i<=n ; i++){
+//         if(i % 2 != 0){
+//             fprintf(fptr , "%d \n" , i);
+//         }
+//     }
+
+//     fclose(fptr);
+//     return 0;
+// }
+
+
+/*2 number - a and b , are written in a file . 
+write a program to replace them with sum;*/
+
 int main(){
     FILE *fptr;
-    fptr = fopen("Student.txt" , "w");
+    fptr = fopen("Sum.txt" , "r");
 
-    char name[100];
-    int age ;
-    float cgpa ;
+    int a;
+    fscanf(fptr , "%d" , &a);
+    int b;
+    fscanf(fptr , "%d" , &b);
 
-    printf("Enter name :");
-    scanf("%s", name);
+    fclose(fptr);
 
-    printf("Enter age :");
-    scanf("%d", &age);
+    fptr = fopen("Sum.txt" , "w");
+    fprintf(fptr , "%d" , a+b);
+    fclose(fptr);
+    return 0;
 
-    printf("Enter cgpa :");
-    scanf("%f", &cgpa);
-
-fprintf(fptr , "%s\t" , name);
-fprintf(fptr , "%d\t" , age);
-fprintf(fptr , "%f\t" , cgpa);
-
-fclose(fptr);
-return 0;
 }
-
-

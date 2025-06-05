@@ -1,1 +1,3 @@
-AtharvNAsare	21	9.800000	
+Student name : Atharv_Nasare
+Student age : 21
+Student cgpa : 9.800000	
