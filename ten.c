@@ -56,19 +56,72 @@
 
 // }
 
-int main(){
-    FILE * fptr;
-    fptr  = fopen ("Text.txt" , "r");
-    char ch;
-    ch = fgetc(fptr);
+/*EOF (End of file)*/
 
-    while(ch != EOF){
-            printf("%c" , ch);
-            ch = fgetc(fptr);
-    }
-    printf("\n");
-    fclose(fptr);
+// int main(){
+//     FILE * fptr;
+//     fptr  = fopen ("Text.txt" , "r");
+//     char ch;
+//     ch = fgetc(fptr);
+
+//     while(ch != EOF){
+//             printf("%c" , ch);
+//             ch = fgetc(fptr);
+//     }
+//     printf("\n");
+//     fclose(fptr);
     
-    return 0;
+//     return 0;
 
+// }
+
+/*Que . make a program to read 5 integer from a file*/
+
+// int main(){
+//     FILE*fptr ;
+//     fptr = fopen ("Text.txt" , "r");
+//     int n;
+
+//     fscanf(fptr ,"%d" ,&n);
+//     printf("number =%d \n" , n);
+
+//         fscanf(fptr ,"%d" ,&n);
+//     printf("number =%d \n" , n);
+
+//         fscanf(fptr ,"%d" ,&n);
+//     printf("number =%d \n" , n);
+
+//         fscanf(fptr ,"%d" ,&n);
+//     printf("number =%d \n" , n);
+
+//       fscanf(fptr ,"%d" ,&n);
+//     printf("number =%d \n" , n);
+
+//       fclose(fptr);
+// return 0;
+// }
+
+    /*MAKE A PROGRAM TO INPUT information form a user rneee e*/
+
+int main(){
+    FILE *fptr;
+    fptr = fopen("Student.txt" , "w");
+
+    char name[100];
+    int age ;
+    float cgpa ;
+
+    printf("Enter name :");
+    scanf("%s", &name);
+
+    printf("Enter age :");
+    scanf("%s", &age);
+
+    printf("Enter cgpa :");
+    scanf("%s", &cgpa);
+
+fclose(fptr);
+return 0;name;; 
 }
+
+
