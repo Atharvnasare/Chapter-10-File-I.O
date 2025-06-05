@@ -112,16 +112,20 @@ int main(){
     float cgpa ;
 
     printf("Enter name :");
-    scanf("%s", &name);
+    scanf("%s", name);
 
     printf("Enter age :");
-    scanf("%s", &age);
+    scanf("%d", &age);
 
     printf("Enter cgpa :");
-    scanf("%s", &cgpa);
+    scanf("%f", &cgpa);
+
+fprintf(fptr , "%s\t" , name);
+fprintf(fptr , "%d\t" , age);
+fprintf(fptr , "%f\t" , cgpa);
 
 fclose(fptr);
-return 0;name;; 
+return 0;
 }
 
 
