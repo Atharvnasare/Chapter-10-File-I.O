@@ -14,9 +14,10 @@
     
 // }
 
-int main(){
-    FILE *fptr;
-    fptr = fopen("Text.txt","r");
+/* Reading from the file*/
+// int main(){
+//     FILE *fptr;
+//     fptr = fopen("Text.txt","r");
 
     // char ch;
     // fscanf(fptr , "%c" , &ch);
@@ -30,15 +31,31 @@ int main(){
     // fscanf(fptr , "%c" , &ch);
     // printf("character = %c \n" , ch);
 
-    int ch;
-    fscanf(fptr , "%d" , &ch);
-    printf("character = %d \n" , ch);
-    fscanf(fptr , "%d" , &ch);
-    printf("character = %d \n" , ch);
-    fscanf(fptr , "%d" , &ch);
-    printf("character = %d \n" , ch);
+//     int ch;
+//     fscanf(fptr , "%d" , &ch);
+//     printf("character = %d \n" , ch);
+//     fscanf(fptr , "%d" , &ch);
+//     printf("character = %d \n" , ch);
+//     fscanf(fptr , "%d" , &ch);
+//     printf("character = %d \n" , ch);
 
+//     fclose(fptr);
+//     return 0;
+// }
+
+/*Writing from the file*/
+
+int main(){
+    FILE*fptr;
+    fptr = fopen("Text.txt" , "w");
+
+    fprintf(fptr , "%c" , 'M');
+    fprintf(fptr , "%c" , 'A');
+    fprintf(fptr , "%c" , 'N');
+    fprintf(fptr , "%c" , 'G');
+    fprintf(fptr , "%c" , 'O');
 
     fclose(fptr);
     return 0;
+
 }
